@@ -6,6 +6,11 @@
   --logo-color: #000000;
   --title-color: #ffffff;
   --btn-text-color: #ffffff;
+  --team-background-color: #ffffff;
+  --background-color-second: #2f303a;
+  --logo-text-color: #ffffff;
+  --background-color-third: #f5f4fa;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -65,7 +70,7 @@ body {
 }
 /* ----------- Hero=============*/
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-color-second);
 }
 .hero-title {
   font-weight: 900;
@@ -120,9 +125,77 @@ body {
 }
 /* ----------- exaples=============*/
 .examples-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.team-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* ----------- team=============*/
+
+.team {
+  background-color: var(--background-color-third);
+}
+.team-list-item {
+  background-color: var(--team-background-color);
+}
+
+.team-list-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-list-position {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+
+/* ----------- footer=============*/
+.footer {
+  background-color: var(--background-color-second);
+}
+
+.logo-part-footer {
+  color: var(--logo-text-color);
+}
+.adress {
+  font-style: normal;
+}
+
+.adress-location {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--logo-text-color);
+}
+.adress-tel,
+.adress-mail {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-link-color);
+}
+
+.adress-tel:hover,
+.adress-mail:hover,
+.adress-location:hover {
+  color: var(--link-color);
+}
+
+.adress-tel:focus,
+.adress-mail:focus,
+.adress-location:focus {
+  color: var(--link-color);
 }
