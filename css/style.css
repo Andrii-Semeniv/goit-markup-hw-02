@@ -67,9 +67,13 @@ body {
   letter-spacing: 0.02em;
   color: var(--link-main-color);
 }
-.header-mail:hover {
+.header-mail:hover,
+.header-tel:hover,
+.header-mail:focus,
+.header-tel:focus {
   color: var(--link-color);
 }
+
 /* ----------- Hero=============*/
 .hero {
   background-color: var(--background-color-second);
@@ -222,9 +226,13 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.portfolio-link {
   color: var(--main-color);
   background-color: var(--background-color-third);
 }
+
 .portfolio-examples-name {
   font-size: 18px;
   line-height: 2;
