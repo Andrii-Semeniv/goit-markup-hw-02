@@ -1,14 +1,11 @@
 :root {
   --main-color: #212121;
   --link-color: #2196f3;
-  --link-main-color: #212121;
   --second-text-color: #757575;
   --logo-color: #000000;
-  --title-color: #ffffff;
-  --btn-text-color: #ffffff;
+  --second-color: #ffffff;
   --team-background-color: #ffffff;
   --background-color-second: #2f303a;
-  --logo-text-color: #ffffff;
   --background-color-third: #f5f4fa;
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --btn-background-color: #2196f3;
@@ -46,11 +43,11 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--link-main-color);
+  color: var(--main-color);
 }
 
 .navigation-link {
-  color: var(--link-main-color);
+  color: var(--main-color);
 }
 .navigation-link:hover,
 .navigation-link:focus {
@@ -65,7 +62,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--link-main-color);
+  color: var(--second-text-color);
 }
 .header-mail:hover,
 .header-tel:hover,
@@ -85,7 +82,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--title-color);
+  color: var(--second-color);
 }
 
 .hero-btn {
@@ -96,11 +93,10 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--btn-text-color);
+  border-color: transparent;
+  color: var(--second-color);
   cursor: pointer;
 }
 
@@ -180,7 +176,7 @@ body {
 }
 
 .logo-part-footer {
-  color: var(--logo-text-color);
+  color: var(--second-color);
 }
 .adress {
   font-style: normal;
@@ -190,7 +186,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--logo-text-color);
+  color: var(--second-color);
 }
 .adress-tel,
 .adress-mail {
@@ -215,7 +211,7 @@ body {
 
 .portfolio-list-btn:hover,
 .portfolio-list-btn:focus {
-  color: var(--btn-text-color);
+  color: var(--second-color);
   background-color: var(--btn-background-color);
 }
 .portfolio-list-btn {
@@ -224,8 +220,11 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  border-color: transparent;
+  border-radius: 4px;
   text-align: center;
   letter-spacing: 0.03em;
+  background-color: var(--background-color-third);
 }
 
 .portfolio-link {
